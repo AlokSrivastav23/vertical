@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vertical Diemesions Raltors About Us</title>
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./style.css">
+  
+    <!-- 
+      - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link
+       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+      <!-- <script src="./script.js"></script> -->
+      <script src="./script.js"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+
+.aboutme-section{
+    display: inline;
+}
+ .wrapper{
+   display: flex;
+   justify-content: left;
+   align-items: center;
+   padding-top: 12%;
+   margin-left: 70px;
+ }
+ .nav nav-tabs{
+    width: 300px;
+
+ }
+ .user-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 40px;
+	width: 650px;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 2px 20px -5px rgba(0,0,0,0.5);
+}
+ 
+.user-card:before {
+   content: '';
+   position: absolute;
+   height: 300%;
+   width: 173px;
+   background: #262626;
+   top: -60px;
+   left: -125px;
+   z-index: 0;
+   transform: rotate(17deg);
+ }
+ 
+ .user-card-img {
+   display: flex;
+   justify-content: center;
+   align-items: center;   
+   z-index: 3;
+ }
+ 
+ .user-card-img img {
+   width: 200px;
+   height: 200px;
+   object-fit: cover;
+   	border-radius: 50%;
+ }
+ 
+ .user-card-info {
+   text-align: center;
+ }
+ 
+ .user-card-info h2 {
+   font-size: 24px;
+   margin: 0;
+   margin-bottom: 10px;
+   font-family: 'Bebas Neue', sans-serif;
+   letter-spacing: 3px;
+ }
+ 
+ .user-card-info p {
+   font-size: 14px;
+   margin-bottom: 2px;
+ }
+ .user-card-info p span {
+	font-weight: 700;
+	margin-right: 10px;
+}
+b{
+    color:goldenrod;
+}
+
+.aboutme-section,
+        .fewthings-section {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .aboutme-section h1,
+        .fewthings-section h1 {
+            color: #333;
+        }
+
+        .aboutme-section p,
+        .fewthings-section p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #555;
+        }
+        .container12 {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section-header {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.section-header h2 {
+  color: #090909;
+  font-weight: bold;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.section-header p {
+  color: #000000;
+}
+
+.row  {
+  display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+}
+
+.contact-info {
+  width: 50%;
+}
+
+.contact-info-item {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.contact-info-icon {
+  height: 70px;
+  width: 70px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.contact-info-icon i {
+  font-size: 30px;
+  line-height: 70px;
+}
+
+.contact-info-content {
+  margin-left: 20px;
+}
+
+.contact-info-content h4 {
+  color: black;
+  font-size: 1.4em;
+  margin-bottom: 5px;
+}
+
+.contact-info-content p {
+  color: #0c0c0c;
+  font-size: 1em;
+}
+
+.contact-form {
+  background-color: #fff;
+  padding: 50px;
+  margin-left: 80px;
+  width: 45%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.contact-form h2 {
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-form .input-box {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contact-form .input-box input,
+.contact-form .input-box textarea{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.contact-form .input-box span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.contact-form .input-box input:focus ~ span,
+.contact-form .input-box textarea:focus ~ span{
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.contact-form .input-box input[type="submit"]
+{
+  width: 100%;
+  background: #d48d00;
+  color: #FFF;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #000000;
+  transition: 0.5s;
+}
+.contact-form .input-box span {
+  font-size: 14px; /* Adjust the font size for better visibility on small screens */
+}
+
+
+.contact-form .input-box input[type="submit"]:hover
+{
+  background: #FFF;
+  color: #090a0a;
+}
+ @media only screen and (min-width: 768px) {
+   .user-card {
+     flex-direction: row;
+     align-items: flex-start;
+   }   
+   .user-card-img {
+     margin-right: 20px;
+     margin-bottom: 0;
+   }
+ 
+   .user-card-info {
+     text-align: left;
+   }
+ }
+
+ @media (max-width: 767px){
+   .wrapper{
+      padding-top: 3%;
+   }
+   .user-card:before {
+      width: 300%;
+      height: 200px;
+      transform: rotate(0);
+   }
+   .user-card-info h2 {
+      margin-top: 25px;
+      font-size: 35px;
+   }
+   .user-card-info p span {
+      display: block;
+      margin-bottom: 15px;
+      font-size: 18px;
+   }
+ }
+ @media only screen and (max-width: 767px) {
+  /* Add your responsive styles here */
+  .wrapper {
+    margin-left: 0; /* Adjust margin or padding as needed */
+  }
+  .contact-form {
+    width: 100%; /* Make the form full width on small screens */
+    margin-left: 0; /* Adjust margin or padding as needed */
+  }
+}
+
+ 
+ 
+
+    </style>
+</head>
+<body style=" height: 100%;">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- 
+    - google font link
+-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+  <link
+     href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+    <script src="./script.js"></script>
+
+</head>
+
+<body class="bodybg">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top" style="height: 50px;text-align: center; align-items: center;">
+      <div class="container">
+
+        <ul class="header-top-list">
+
+          <li>
+            <a href="mailto:info@homeverse.com" class="header-top-link">
+              <ion-icon name="mail-outline"></ion-icon>
+
+              <span>info@verticaldiemesionraltors.in</span>
+            </a> 
+          </li>
+
+         </ul>
+
+        <div class="wrapper">
+          <ul class="header-top-social-list">
+
+            <li>
+              <a href="#" class="header-top-social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="header-top-social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="header-top-social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="header-top-social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="header-top-social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+<br>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+
+        <a href="./index.html" class="logo" tabindex="0">
+          <img src="./Company_project/images/logo.jpg" alt="Vertical dimensions where dreams take shape">
+        </a>
+        <!-- <strong>VERTICAL DIEMENSION</strong> -->
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+            <a href="#" class="logo">
+              <img src="./assets/images/logo.png" alt="vertical Diemensions raltors logo">
+            </a>
+
+            <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <div class="navbar-bottom">
+            <ul class="navbar-list">
+
+              <li>
+                <a href="./index.html" class="navbar-link" data-nav-link>Home</a>
+              </li>
+
+              <li>
+                <a href="./about.html" class="navbar-link" data-nav-link>About</a>
+              </li>
+
+              <li>
+                <label class="dropdown">
+<div class="navbar-link">
+                  <div class="dd-button">
+                    Projects
+                  </div>
+                
+                  <input type="checkbox" class="dd-input">
+                
+                  <ul class="dd-menu" >
+                    <li><a href="./Residential.html" data-nav-link >Residential</a></li>
+                    <li>
+                      <a href="./Commercial.html" data-nav-link >Commercial</a>
+                    </li>
+                  </ul>
+                  
+                </label>
+              </li>
+              
+              <li>
+                <a href="./From.html" class="navbar-link" data-nav-link>Contact</a>
+              </li>
+              <li>
+                <a href="#" class="navbar-link" data-nav-link>Career</a>
+              </li>
+
+
+            </ul>
+          </div>
+        </div>
+
+        </nav>
+        <div class="header-bottom-actions">
+          <a href="./index.html">
+          <button class="header-bottom-actions-btn" data-nav-open-btn aria-label="Open Menu">
+            <ion-icon name="home-outline"></ion-icon>
+
+            <span>Home</span>
+          </button>
+        </a>
+<a href="./about.html">
+          <button class="header-bottom-actions-btn" aria-label="About Us">
+           
+            <ion-icon name="person-outline"></ion-icon>
+
+            <span>About Us</span>
+          </button>
+
+        </a>
+        <a href="./from.html">
+          <button class="header-bottom-actions-btn" aria-label="Cart">
+            <ion-icon name="call-outline"></ion-icon>
+
+            <span>Contact Us</span>
+          </button>
+        </a>
+
+      <a href="#blog1">
+          <button class="header-bottom-actions-btn" data-nav-open-btn aria-label="Projects">
+            <ion-icon name="folder-outline"></ion-icon>
+
+            <span>Projects</span>
+          </button>
+        </a>
+        <a href="./Career.html">      
+              <button class="header-bottom-actions-btn" data-nav-open-btn aria-label="Career">
+            <ion-icon name="heart-outline"></ion-icon>
+
+            <span>Career</span>
+          </button>
+        </a>
+
+
+        </div>
+
+    
+
+  </header>
+  <div class="left">
+  <ul class="nav nav-tabs" id="myTab" role="tablist" >
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true" style="width: 350px;.tab button:hover {
+        background-color: #ddd;
+      }"><b>About Us </b></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false" style="width: 350px;"><b>Our Mission </b></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false" style="width: 350px;"><b>Our Vision</b></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" style="width: 350px;"><b>Management Team</b></button>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" style="color: #042F42;margin-left: 50px;" ><br><br><p><b>Vertical Dimensions Realtors,</b> as the name suggests, specializes in providing all-around solutions
+        to meet the various facets of Residential & Commercial property purchase & investment.
+        Our aim to give our customers a comprehensive and flawless experience in buying or investing in residential and commercial properties.
+        We take care of almost every aspect of property-related concerns, from searching for new homes, finding suitable locations, and competitive pricing to after-sales services.
+        We hope that people won't even realize the hassle of real estate in the future. Instead, they'll know
+        Vertical Dimensions Realtors as a company that just happens to deliver complete real estate solutions.</p></div>
+    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0"><br><br><b><p>Vertical Dimensions Realtors</b> is best in business in<br> having a wide range of Residential & Commercial property in Noida,<br> Delhi NCR. Our Mission is to become the epitome of real estate.<br> In design, strength, name, and innovation.
+       <br> Driven by our motto of Commitment, Honesty & Reliability, we continuously pursue the goal of<br> identifying the best possible opportunities for our clients and assisting them<br> in making smart & prudent decisions.</p></div>
+    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0"><br><br><p><b>Vertical Dimensions Realtors </b> is a goal-oriented organization.<br> We want to serve the client in a way that they have the best experience<br> in buying /selling property in India. We are committed to providing you excellent Assistance regarding<br> Real Estate to make the best decisions and save your precious time as well as your valuable money.<br> So we can become premier and preferred Real estate consulting companies. </p></div>
+    <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0"><br> <br> <p style="display: inline; text-align: center ; align-items: center;">Vertical Dimensions Realtors is lead by the following two most dynamic and energetic persons, who have been in the Real Estate Business. Their commitment to bring innovative and customer friendly solutions has led to the emergence of Vertical Dimensions Realtors as one of the fastest growing Real Estate Company.</p></div>
+  </div>
+</div>
+ 
+   
+
+    <div class="wrapper">
+        <div class="user-card">
+            <div class="user-card-img">
+              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxivAs4UknzmDfLBXGMxQkayiZDhR2ftB4jcIV7LEnIEStiUyMygioZnbLXCAND-I_xWQpVp0jv-dv9NVNbuKn4sNpXYtLIJk2-IOdWQNpC2Ldapnljifu0pnQqAWU848Ja4lT9ugQex-nwECEh3a96GXwiRXlnGEE6FFF_tKm66IGe3fzmLaVIoNL/s1600/img_avatar.png" alt="">
+            </div>
+            <div class="user-card-info">
+              <h2>Lokesh Kaushik</h2>
+              <p><span>Email:</span> msri@verticaldiemesionraltors.in</p>
+              <p><span>Occupation:</span> CEO</p>
+              <p><span>About me:</span> A dynamic leader of Vertical Dimensions Realtors, has more than 20 Years experience in Real Estate Sector. He is in Real Estate business since 2003 in Delhi NCR real estate markets.  Lokesh Kaushik is widely acknowledged for revolutionizing the real estate sector with his visionary outlook and technology-based solutions. With his able guidance and professionalism, Vertical Dimensions Realtors is destined to grow organically. His vision and expertise have made him one of the few young entrepreneurs among the leaders of real estate industry who bring excellence in the real estate business.</p>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper" style="display: flex; text-align: center; align-items: right;" >
+        <div class="user-card">
+            <div class="user-card-img">
+              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxivAs4UknzmDfLBXGMxQkayiZDhR2ftB4jcIV7LEnIEStiUyMygioZnbLXCAND-I_xWQpVp0jv-dv9NVNbuKn4sNpXYtLIJk2-IOdWQNpC2Ldapnljifu0pnQqAWU848Ja4lT9ugQex-nwECEh3a96GXwiRXlnGEE6FFF_tKm66IGe3fzmLaVIoNL/s1600/img_avatar.png" alt="">
+            </div>
+            <div class="user-card-info">
+              <h2>Manish Srivastav</h2>
+              <p><span>Email:</span> msri@verticaldiemesionraltors.in</p>
+              <p><span>Occupation:</span> CEO</p>
+              <p><span>About me:</span> Manish Srivastava has started his real estate journey with more than 18 Years experience. He is playing an instrumental role in setting policies and procedures for Sales and Marketing team in the company and actively involved in setting benchmark practices for Customer Relation Management. Under his Strong Leadership and Extraordinary Vision, Vertical Dimensions Realtors is committed towards driving revenues and creating wealth for all key Stakeholders and Investors. Manish Srivastava knows that it is not just the money but also a plethora of emotions that are involved in the journey of purchasing a dream home. His professionalism and honesty are regarded as an example in the real estate business.</p>
+            </div>.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+      <div class="contact-form"style="margin-left:15% ; @media only screen and (max-width: 767px) {
+        .contact-form {
+          margin-left: 0; /* Adjust the left margin for smaller screens */
+          margin-top: 0; /* Adjust the top margin for smaller screens */
+          width: 100%; /* Make the form full width on small screens */
+        }
+      }" >
+        <form action="" id="contact-form" >
+          <h2 style="color: #641E16;">Send Message</h2>
+          <div class="input-box">
+            <input type="text" required="true" name="" placeholder="Full Name">
+            <span>Full Name</span>
+          </div>
+          
+          <div class="input-box">
+            <input type="email" required="true" name="" placeholder="Enter Your Email">
+            <span>Email</span>
+          </div>
+          
+          <div class="input-box">
+            <textarea required="true" name="" placeholder="Type Your Message..."></textarea>
+            <span>Type your Message...</span>
+          </div>
+          
+          <div class="input-box">
+            <input type="submit" value="Send" name="">
+          </div>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</section>
+<br><br>
+
+
+    </div>
+    <br><br>
+
+
+    <footer class="footer">
+
+        <div class="footer-top">
+          <div class="container">
+    
+            <div class="footer-brand">
+    
+              <a href="#" class="logo">
+                <!-- <img src="./assets/images/logo-light.png" alt="Homeverse logo"> -->
+                <strong>VERTICAL DIMENSIONS</strong>
+              </a>
+    
+              <p class="section-text">
+                Uncover investment opportunities and capital sources – worldwide. Our access to global capital combined with our financing expertise, real estate insights and integrated research will help you see the opportunities that others overlook.
+              </p>
+    
+              <ul class="contact-list">
+    
+                <li>
+                  <a href="#" class="contact-link">
+                    <ion-icon name="location-outline"></ion-icon>
+    
+                    <address>Office: A-1117, Tower A 
+                      11th Floor, ATS Bouquet
+                      Sector-132, Noida Expressway, U.P. - 201304, </address>
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="tel:+0123456789" class="contact-link">
+                    <ion-icon name="call-outline"></ion-icon>
+    
+                    <span>+91- 9811181233</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+0123456789" class="contact-link">
+                    <ion-icon name="call-outline"></ion-icon>
+    
+                    <span>+91- 9953009013</span>
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="mailto:contact@homeverse.com" class="contact-link">
+                    <ion-icon name="mail-outline"></ion-icon>
+    
+                    <span>www.verticaldiemesions.in</span>
+                  </a>
+                </li>
+    
+              </ul>
+    
+              <ul class="social-list">
+    
+                <li>
+                  <a href="https://www.facebook.com/profile.php?id=61551459567431" class="social-link" target="_blank">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="https://twitter.com/VerticalDimen" class="social-link" target="_blank">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="https://www.linkedin.com/in/vertical-dimensions-737b59291/" class="social-link" target="_blank">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+    
+                <a href="https://www.linkedin.com/in/vertical-dimensions-737b59291/" class="social-link" target="_blank">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+    
+                <li>
+                  <a href="https://www.youtube.com/@VerticalDimensionsOffical" class="social-link" target="_blank">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+                </li>
+    
+              </ul>
+    
+            </div>
+    
+            <div class="footer-link-box">
+    
+              <ul class="footer-list">
+    
+                <li>
+                  <p class="footer-list-title">Company</p>
+                </li>
+    
+                <li>
+                  <a href="./about.html" class="footer-link">ABOUT US</a>
+                </li>
+    
+                <li>
+                  <a href="#" class="footer-link">Blog</a>
+                </li>
+    
+                <li>
+                  <a href="#" class="footer-link">FAQ</a>
+                </li>
+    
+              </ul>
+              <ul class="footer-list">
+    
+                <li>
+                  <p class="footer-list-title">Useful Links</p>
+                </li>
+                <li>
+                  <a href="./index.html" class="footer-link">Home</a>
+                </li>
+    
+                <li>
+                  <label class="dropdown">
+    
+                    <div tabindex="0" class="dd-button" id="projectss" style="color:aliceblue; border: 1px solid #ff5a3d; width: 150px;">
+                      Projects
+                    </div>
+                  
+                    <input type="checkbox" class="dd-input" id="test" >
+                  
+                    <ul class="dd-menu">
+                      <li><a href="./Residential.html" style="color:black">Residential</a></li>
+                      <li>
+                        <a href="./Commercial.html" style="color:black">Commercial</a>
+                      </li>
+                    </ul>
+                    
+                  </label>
+                </li>
+                <li>
+                  <a href="./from.html" class="footer-link">Contect Us</a>
+                </li>
+                <li>
+                  <a href="./" class="footer-link">Career</a>
+                </li>
+    
+    
+              </ul>
+              
+              <ul class="footer-list">
+    
+                <li>
+                  <p class="footer-list-title">About our projects</p>
+                </li>
+    <li><h3>Residential Project</h3></li><br>
+    <li><p>Ace Parkway</p></li><br>
+    <li><p>Ace Divino</p></li><br>
+    <li><p>ELDECO Live by the Greens</p></li><br>
+    <li><p>M3M The Cullinan </p></li><br>
+    <li><p>Ace Starlit (under construction)</p></li><br>
+    <br><br><br>
+    <li><h3>Commercial Project</h3></li><br>
+    <li><p>M3M Cullinan Avenue</p></li><br>
+    <li><p>Ace 153</p></li>
+    
+              </ul>
+              </ul>
+    
+            </div>
+    
+          </div>
+        </div>
+    
+      </footer>
+    
+    
+    
+    
+    
+      <!-- 
+        - custom js link
+      -->
+      <script src="./assets/js/script.js"></script>
+
+      <!-- 
+        - ionicon link
+      -->
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      
+</body>
+</html>
